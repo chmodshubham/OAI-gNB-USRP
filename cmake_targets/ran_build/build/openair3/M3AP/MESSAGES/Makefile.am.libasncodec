@@ -1,0 +1,249 @@
+ASN_MODULE_SRCS=	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_M3AP-PDU.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_InitiatingMessage.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_SuccessfulOutcome.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_UnsuccessfulOutcome.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_MBMSSessionStartRequest.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_MBMSSessionStartResponse.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_MBMSSessionStartFailure.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_MBMSSessionStopRequest.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_MBMSSessionStopResponse.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_MBMSSessionUpdateRequest.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_MBMSSessionUpdateResponse.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_MBMSSessionUpdateFailure.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_ErrorIndication.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_Reset.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_ResetType.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_ResetAll.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_MBMS-Service-associatedLogicalM3-ConnectionListRes.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_ResetAcknowledge.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_MBMS-Service-associatedLogicalM3-ConnectionListResAck.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_PrivateMessage.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_M3SetupRequest.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_MBMSServiceAreaListItem.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_M3SetupResponse.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_M3SetupFailure.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_MCEConfigurationUpdate.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_MCEConfigurationUpdateAcknowledge.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_MCEConfigurationUpdateFailure.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_Absolute-Time-ofMBMS-Data.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_AllocationAndRetentionPriority.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_BitRate.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_Cause.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_CauseMisc.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_CauseNAS.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_CauseProtocol.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_CauseRadioNetwork.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_CauseTransport.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_CriticalityDiagnostics.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_CriticalityDiagnostics-IE-List.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_ECGI.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_EUTRANCellIdentifier.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_ExtendedMCE-ID.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_Global-MCE-ID.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_GBR-QosInformation.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_GTP-TEID.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_IPAddress.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_MBMS-Cell-List.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_MBMS-E-RAB-QoS-Parameters.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_MBMS-Service-associatedLogicalM3-ConnectionItem.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_MBMSServiceArea1.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_MBMS-Service-Area.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_MBMS-Session-Duration.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_MBMS-Session-ID.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_MCE-MBMS-M3AP-ID.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_MCE-ID.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_MCEname.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_MinimumTimeToMBMSDataTransfer.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_MME-MBMS-M3AP-ID.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_Pre-emptionCapability.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_Pre-emptionVulnerability.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_PriorityLevel.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_PLMN-Identity.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_QCI.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_Reestablishment.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_TimeToWait.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_TMGI.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_TNL-Information.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_TypeOfError.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_Criticality.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_Presence.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_PrivateIE-ID.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_ProcedureCode.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_ProtocolIE-ID.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_TriggeringMessage.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_ProtocolIE-Container.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_ProtocolIE-Single-Container.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_ProtocolIE-Field.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_ProtocolIE-ContainerPair.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_ProtocolIE-FieldPair.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_ProtocolIE-ContainerList.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_ProtocolIE-ContainerPairList.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_ProtocolExtensionContainer.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_ProtocolExtensionField.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_PrivateIE-Container.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_PrivateIE-Field.c
+
+ASN_MODULE_HDRS=	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_M3AP-PDU.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_InitiatingMessage.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_SuccessfulOutcome.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_UnsuccessfulOutcome.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_MBMSSessionStartRequest.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_MBMSSessionStartResponse.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_MBMSSessionStartFailure.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_MBMSSessionStopRequest.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_MBMSSessionStopResponse.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_MBMSSessionUpdateRequest.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_MBMSSessionUpdateResponse.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_MBMSSessionUpdateFailure.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_ErrorIndication.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_Reset.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_ResetType.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_ResetAll.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_MBMS-Service-associatedLogicalM3-ConnectionListRes.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_ResetAcknowledge.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_MBMS-Service-associatedLogicalM3-ConnectionListResAck.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_PrivateMessage.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_M3SetupRequest.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_MBMSServiceAreaListItem.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_M3SetupResponse.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_M3SetupFailure.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_MCEConfigurationUpdate.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_MCEConfigurationUpdateAcknowledge.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_MCEConfigurationUpdateFailure.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_Absolute-Time-ofMBMS-Data.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_AllocationAndRetentionPriority.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_BitRate.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_Cause.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_CauseMisc.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_CauseNAS.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_CauseProtocol.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_CauseRadioNetwork.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_CauseTransport.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_CriticalityDiagnostics.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_CriticalityDiagnostics-IE-List.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_ECGI.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_EUTRANCellIdentifier.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_ExtendedMCE-ID.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_Global-MCE-ID.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_GBR-QosInformation.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_GTP-TEID.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_IPAddress.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_MBMS-Cell-List.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_MBMS-E-RAB-QoS-Parameters.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_MBMS-Service-associatedLogicalM3-ConnectionItem.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_MBMSServiceArea1.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_MBMS-Service-Area.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_MBMS-Session-Duration.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_MBMS-Session-ID.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_MCE-MBMS-M3AP-ID.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_MCE-ID.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_MCEname.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_MinimumTimeToMBMSDataTransfer.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_MME-MBMS-M3AP-ID.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_Pre-emptionCapability.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_Pre-emptionVulnerability.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_PriorityLevel.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_PLMN-Identity.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_QCI.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_Reestablishment.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_TimeToWait.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_TMGI.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_TNL-Information.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_TypeOfError.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_Criticality.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_Presence.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_PrivateIE-ID.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_ProcedureCode.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_ProtocolIE-ID.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_TriggeringMessage.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_ProtocolIE-Container.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_ProtocolIE-Single-Container.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_ProtocolIE-Field.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_ProtocolIE-ContainerPair.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_ProtocolIE-FieldPair.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_ProtocolIE-ContainerList.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_ProtocolIE-ContainerPairList.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_ProtocolExtensionContainer.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_ProtocolExtensionField.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_PrivateIE-Container.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/M3AP_PrivateIE-Field.h
+
+ASN_MODULE_HDRS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/ANY.h
+ASN_MODULE_SRCS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/ANY.c
+ASN_MODULE_HDRS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/OCTET_STRING.h
+ASN_MODULE_HDRS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/OPEN_TYPE.h
+ASN_MODULE_SRCS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/OPEN_TYPE.c
+ASN_MODULE_HDRS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/constr_CHOICE.h
+ASN_MODULE_HDRS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/INTEGER.h
+ASN_MODULE_SRCS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/INTEGER.c
+ASN_MODULE_HDRS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/NativeEnumerated.h
+ASN_MODULE_SRCS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/NativeEnumerated.c
+ASN_MODULE_HDRS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/NativeInteger.h
+ASN_MODULE_SRCS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/NativeInteger.c
+ASN_MODULE_HDRS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/OBJECT_IDENTIFIER.h
+ASN_MODULE_SRCS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/OBJECT_IDENTIFIER.c
+ASN_MODULE_HDRS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/PrintableString.h
+ASN_MODULE_SRCS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/PrintableString.c
+ASN_MODULE_HDRS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/asn_SEQUENCE_OF.h
+ASN_MODULE_SRCS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/asn_SEQUENCE_OF.c
+ASN_MODULE_HDRS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/asn_SET_OF.h
+ASN_MODULE_SRCS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/asn_SET_OF.c
+ASN_MODULE_SRCS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/constr_CHOICE.c
+ASN_MODULE_HDRS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/constr_SEQUENCE.h
+ASN_MODULE_SRCS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/constr_SEQUENCE.c
+ASN_MODULE_HDRS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/constr_SEQUENCE_OF.h
+ASN_MODULE_SRCS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/constr_SEQUENCE_OF.c
+ASN_MODULE_HDRS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/constr_SET_OF.h
+ASN_MODULE_SRCS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/constr_SET_OF.c
+ASN_MODULE_HDRS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/asn_application.h
+ASN_MODULE_SRCS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/asn_application.c
+ASN_MODULE_HDRS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/asn_ioc.h
+ASN_MODULE_HDRS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/asn_system.h
+ASN_MODULE_HDRS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/asn_codecs.h
+ASN_MODULE_HDRS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/asn_internal.h
+ASN_MODULE_SRCS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/asn_internal.c
+ASN_MODULE_HDRS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/asn_random_fill.h
+ASN_MODULE_SRCS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/asn_random_fill.c
+ASN_MODULE_HDRS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/asn_bit_data.h
+ASN_MODULE_SRCS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/asn_bit_data.c
+ASN_MODULE_SRCS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/OCTET_STRING.c
+ASN_MODULE_HDRS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/BIT_STRING.h
+ASN_MODULE_SRCS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/BIT_STRING.c
+ASN_MODULE_SRCS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/asn_codecs_prim.c
+ASN_MODULE_HDRS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/asn_codecs_prim.h
+ASN_MODULE_HDRS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/ber_tlv_length.h
+ASN_MODULE_SRCS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/ber_tlv_length.c
+ASN_MODULE_HDRS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/ber_tlv_tag.h
+ASN_MODULE_SRCS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/ber_tlv_tag.c
+ASN_MODULE_HDRS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/ber_decoder.h
+ASN_MODULE_SRCS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/ber_decoder.c
+ASN_MODULE_HDRS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/der_encoder.h
+ASN_MODULE_SRCS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/der_encoder.c
+ASN_MODULE_HDRS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/constr_TYPE.h
+ASN_MODULE_SRCS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/constr_TYPE.c
+ASN_MODULE_HDRS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/constraints.h
+ASN_MODULE_SRCS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/constraints.c
+ASN_MODULE_HDRS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/xer_support.h
+ASN_MODULE_SRCS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/xer_support.c
+ASN_MODULE_HDRS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/xer_decoder.h
+ASN_MODULE_SRCS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/xer_decoder.c
+ASN_MODULE_HDRS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/xer_encoder.h
+ASN_MODULE_SRCS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/xer_encoder.c
+ASN_MODULE_HDRS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/per_support.h
+ASN_MODULE_SRCS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/per_support.c
+ASN_MODULE_HDRS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/per_decoder.h
+ASN_MODULE_SRCS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/per_decoder.c
+ASN_MODULE_HDRS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/per_encoder.h
+ASN_MODULE_SRCS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/per_encoder.c
+ASN_MODULE_HDRS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/per_opentype.h
+ASN_MODULE_SRCS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/per_opentype.c
+
+ASN_MODULE_CFLAGS=-DASN_DISABLE_OER_SUPPORT 
+
+lib_LTLIBRARIES+=libasncodec.la
+libasncodec_la_SOURCES=$(ASN_MODULE_SRCS) $(ASN_MODULE_HDRS)
+libasncodec_la_CPPFLAGS=-I$(top_srcdir)//home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair3/M3AP/MESSAGES/
+libasncodec_la_CFLAGS=$(ASN_MODULE_CFLAGS)
+libasncodec_la_LDFLAGS=-lm

@@ -1,0 +1,347 @@
+ASN_MODULE_SRCS=	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_M2AP-PDU.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_InitiatingMessage.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_SuccessfulOutcome.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_UnsuccessfulOutcome.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_SessionStartRequest.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_SessionStartResponse.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_SessionStartFailure.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_SessionStopRequest.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_SessionStopResponse.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_SessionUpdateRequest.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_SessionUpdateResponse.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_SessionUpdateFailure.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MbmsSchedulingInformation.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MBSFN-Area-Configuration-List.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_PMCH-Configuration-List.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_PMCH-Configuration-Item.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MBSFN-Subframe-ConfigurationList.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MBMS-Suspension-Notification-List.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MBMS-Suspension-Notification-Item.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MbmsSchedulingInformationResponse.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_M2SetupRequest.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_ENB-MBMS-Configuration-data-List.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_M2SetupResponse.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MCCHrelatedBCCH-ConfigPerMBSFNArea.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_M2SetupFailure.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_ENBConfigurationUpdate.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_ENB-MBMS-Configuration-data-List-ConfigUpdate.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_ENBConfigurationUpdateAcknowledge.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_ENBConfigurationUpdateFailure.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MCEConfigurationUpdate.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MCEConfigurationUpdateAcknowledge.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MCEConfigurationUpdateFailure.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_ErrorIndication.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_Reset.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_ResetType.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_ResetAll.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MBMS-Service-associatedLogicalM2-ConnectionListRes.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_ResetAcknowledge.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MBMS-Service-associatedLogicalM2-ConnectionListResAck.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_PrivateMessage.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MbmsServiceCountingRequest.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MBMS-Counting-Request-Session.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MBMS-Counting-Request-SessionIE.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MbmsServiceCountingResponse.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MbmsServiceCountingFailure.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MbmsServiceCountingResultsReport.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MBMS-Counting-Result-List.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MBMS-Counting-Result.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_CountingResult.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MbmsOverloadNotification.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_Overload-Status-Per-PMCH-List.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_PMCH-Overload-Status.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_Active-MBMS-Session-List.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_AllocatedSubframesEnd.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_AllocationAndRetentionPriority.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_BitRate.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_Cause.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_CauseMisc.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_CauseNAS.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_CauseProtocol.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_CauseRadioNetwork.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_CauseTransport.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_Cell-Information.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_Cell-Information-List.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_CriticalityDiagnostics.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_CriticalityDiagnostics-IE-List.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_ECGI.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_ENB-ID.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_ENB-MBMS-Configuration-data-Item.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_ENB-MBMS-Configuration-data-ConfigUpdate-Item.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_ENB-MBMS-M2AP-ID.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_ENBname.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_EUTRANCellIdentifier.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_GBR-QosInformation.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_GlobalENB-ID.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_GlobalMCE-ID.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_GTP-TEID.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_IPAddress.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_LCID.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MBMS-Cell-List.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MBMS-E-RAB-QoS-Parameters.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MBMS-Service-associatedLogicalM2-ConnectionItem.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MBMS-Service-Area.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MBMS-Service-Area-ID-List.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MBMS-Session-ID.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MBMSsessionListPerPMCH-Item.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MBMSsessionsToBeSuspendedListPerPMCH-Item.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MBSFN-Area-ID.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MBSFN-SynchronisationArea-ID.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MBSFN-Subframe-Configuration.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MCCH-Update-Time.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MCCHrelatedBCCH-ConfigPerMBSFNArea-Item.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MCE-ID.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MCE-MBMS-M2AP-ID.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MCEname.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MCH-Scheduling-Period.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MCH-Scheduling-PeriodExtended.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MCH-Scheduling-PeriodExtended2.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_Modulation-Coding-Scheme2.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_Modification-PeriodExtended.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_PLMN-Identity.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_PMCH-Configuration.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_Common-Subframe-Allocation-Period.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_Pre-emptionCapability.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_Pre-emptionVulnerability.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_PriorityLevel.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_QCI.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_Repetition-PeriodExtended.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_SC-PTM-Information.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_SFN.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_Subcarrier-SpacingMBMS.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_SubframeAllocationExtended.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_TimeToWait.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_TMGI.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_TNL-Information.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_TypeOfError.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_Criticality.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_Presence.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_PrivateIE-ID.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_ProcedureCode.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_ProtocolIE-ID.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_TriggeringMessage.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_ProtocolIE-Container.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_ProtocolIE-Single-Container.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_ProtocolIE-Field.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_ProtocolIE-ContainerPair.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_ProtocolIE-FieldPair.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_ProtocolIE-ContainerList.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_ProtocolIE-ContainerPairList.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_ProtocolExtensionContainer.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_ProtocolExtensionField.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_PrivateIE-Container.c	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_PrivateIE-Field.c
+
+ASN_MODULE_HDRS=	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_M2AP-PDU.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_InitiatingMessage.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_SuccessfulOutcome.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_UnsuccessfulOutcome.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_SessionStartRequest.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_SessionStartResponse.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_SessionStartFailure.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_SessionStopRequest.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_SessionStopResponse.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_SessionUpdateRequest.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_SessionUpdateResponse.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_SessionUpdateFailure.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MbmsSchedulingInformation.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MBSFN-Area-Configuration-List.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_PMCH-Configuration-List.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_PMCH-Configuration-Item.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MBSFN-Subframe-ConfigurationList.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MBMS-Suspension-Notification-List.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MBMS-Suspension-Notification-Item.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MbmsSchedulingInformationResponse.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_M2SetupRequest.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_ENB-MBMS-Configuration-data-List.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_M2SetupResponse.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MCCHrelatedBCCH-ConfigPerMBSFNArea.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_M2SetupFailure.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_ENBConfigurationUpdate.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_ENB-MBMS-Configuration-data-List-ConfigUpdate.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_ENBConfigurationUpdateAcknowledge.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_ENBConfigurationUpdateFailure.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MCEConfigurationUpdate.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MCEConfigurationUpdateAcknowledge.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MCEConfigurationUpdateFailure.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_ErrorIndication.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_Reset.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_ResetType.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_ResetAll.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MBMS-Service-associatedLogicalM2-ConnectionListRes.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_ResetAcknowledge.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MBMS-Service-associatedLogicalM2-ConnectionListResAck.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_PrivateMessage.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MbmsServiceCountingRequest.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MBMS-Counting-Request-Session.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MBMS-Counting-Request-SessionIE.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MbmsServiceCountingResponse.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MbmsServiceCountingFailure.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MbmsServiceCountingResultsReport.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MBMS-Counting-Result-List.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MBMS-Counting-Result.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_CountingResult.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MbmsOverloadNotification.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_Overload-Status-Per-PMCH-List.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_PMCH-Overload-Status.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_Active-MBMS-Session-List.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_AllocatedSubframesEnd.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_AllocationAndRetentionPriority.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_BitRate.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_Cause.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_CauseMisc.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_CauseNAS.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_CauseProtocol.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_CauseRadioNetwork.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_CauseTransport.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_Cell-Information.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_Cell-Information-List.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_CriticalityDiagnostics.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_CriticalityDiagnostics-IE-List.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_ECGI.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_ENB-ID.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_ENB-MBMS-Configuration-data-Item.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_ENB-MBMS-Configuration-data-ConfigUpdate-Item.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_ENB-MBMS-M2AP-ID.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_ENBname.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_EUTRANCellIdentifier.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_GBR-QosInformation.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_GlobalENB-ID.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_GlobalMCE-ID.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_GTP-TEID.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_IPAddress.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_LCID.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MBMS-Cell-List.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MBMS-E-RAB-QoS-Parameters.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MBMS-Service-associatedLogicalM2-ConnectionItem.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MBMS-Service-Area.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MBMS-Service-Area-ID-List.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MBMS-Session-ID.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MBMSsessionListPerPMCH-Item.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MBMSsessionsToBeSuspendedListPerPMCH-Item.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MBSFN-Area-ID.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MBSFN-SynchronisationArea-ID.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MBSFN-Subframe-Configuration.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MCCH-Update-Time.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MCCHrelatedBCCH-ConfigPerMBSFNArea-Item.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MCE-ID.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MCE-MBMS-M2AP-ID.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MCEname.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MCH-Scheduling-Period.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MCH-Scheduling-PeriodExtended.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_MCH-Scheduling-PeriodExtended2.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_Modulation-Coding-Scheme2.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_Modification-PeriodExtended.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_PLMN-Identity.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_PMCH-Configuration.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_Common-Subframe-Allocation-Period.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_Pre-emptionCapability.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_Pre-emptionVulnerability.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_PriorityLevel.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_QCI.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_Repetition-PeriodExtended.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_SC-PTM-Information.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_SFN.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_Subcarrier-SpacingMBMS.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_SubframeAllocationExtended.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_TimeToWait.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_TMGI.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_TNL-Information.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_TypeOfError.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_Criticality.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_Presence.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_PrivateIE-ID.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_ProcedureCode.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_ProtocolIE-ID.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_TriggeringMessage.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_ProtocolIE-Container.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_ProtocolIE-Single-Container.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_ProtocolIE-Field.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_ProtocolIE-ContainerPair.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_ProtocolIE-FieldPair.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_ProtocolIE-ContainerList.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_ProtocolIE-ContainerPairList.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_ProtocolExtensionContainer.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_ProtocolExtensionField.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_PrivateIE-Container.h	\
+	/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/M2AP_PrivateIE-Field.h
+
+ASN_MODULE_HDRS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/ANY.h
+ASN_MODULE_SRCS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/ANY.c
+ASN_MODULE_HDRS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/OCTET_STRING.h
+ASN_MODULE_HDRS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/OPEN_TYPE.h
+ASN_MODULE_SRCS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/OPEN_TYPE.c
+ASN_MODULE_HDRS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/constr_CHOICE.h
+ASN_MODULE_HDRS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/INTEGER.h
+ASN_MODULE_SRCS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/INTEGER.c
+ASN_MODULE_HDRS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/NativeEnumerated.h
+ASN_MODULE_SRCS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/NativeEnumerated.c
+ASN_MODULE_HDRS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/NativeInteger.h
+ASN_MODULE_SRCS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/NativeInteger.c
+ASN_MODULE_HDRS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/OBJECT_IDENTIFIER.h
+ASN_MODULE_SRCS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/OBJECT_IDENTIFIER.c
+ASN_MODULE_HDRS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/PrintableString.h
+ASN_MODULE_SRCS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/PrintableString.c
+ASN_MODULE_HDRS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/asn_SEQUENCE_OF.h
+ASN_MODULE_SRCS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/asn_SEQUENCE_OF.c
+ASN_MODULE_HDRS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/asn_SET_OF.h
+ASN_MODULE_SRCS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/asn_SET_OF.c
+ASN_MODULE_SRCS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/constr_CHOICE.c
+ASN_MODULE_HDRS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/constr_SEQUENCE.h
+ASN_MODULE_SRCS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/constr_SEQUENCE.c
+ASN_MODULE_HDRS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/constr_SEQUENCE_OF.h
+ASN_MODULE_SRCS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/constr_SEQUENCE_OF.c
+ASN_MODULE_HDRS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/constr_SET_OF.h
+ASN_MODULE_SRCS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/constr_SET_OF.c
+ASN_MODULE_HDRS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/asn_application.h
+ASN_MODULE_SRCS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/asn_application.c
+ASN_MODULE_HDRS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/asn_ioc.h
+ASN_MODULE_HDRS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/asn_system.h
+ASN_MODULE_HDRS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/asn_codecs.h
+ASN_MODULE_HDRS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/asn_internal.h
+ASN_MODULE_SRCS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/asn_internal.c
+ASN_MODULE_HDRS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/asn_random_fill.h
+ASN_MODULE_SRCS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/asn_random_fill.c
+ASN_MODULE_HDRS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/asn_bit_data.h
+ASN_MODULE_SRCS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/asn_bit_data.c
+ASN_MODULE_SRCS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/OCTET_STRING.c
+ASN_MODULE_HDRS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/BIT_STRING.h
+ASN_MODULE_SRCS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/BIT_STRING.c
+ASN_MODULE_SRCS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/asn_codecs_prim.c
+ASN_MODULE_HDRS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/asn_codecs_prim.h
+ASN_MODULE_HDRS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/ber_tlv_length.h
+ASN_MODULE_SRCS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/ber_tlv_length.c
+ASN_MODULE_HDRS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/ber_tlv_tag.h
+ASN_MODULE_SRCS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/ber_tlv_tag.c
+ASN_MODULE_HDRS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/ber_decoder.h
+ASN_MODULE_SRCS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/ber_decoder.c
+ASN_MODULE_HDRS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/der_encoder.h
+ASN_MODULE_SRCS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/der_encoder.c
+ASN_MODULE_HDRS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/constr_TYPE.h
+ASN_MODULE_SRCS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/constr_TYPE.c
+ASN_MODULE_HDRS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/constraints.h
+ASN_MODULE_SRCS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/constraints.c
+ASN_MODULE_HDRS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/xer_support.h
+ASN_MODULE_SRCS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/xer_support.c
+ASN_MODULE_HDRS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/xer_decoder.h
+ASN_MODULE_SRCS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/xer_decoder.c
+ASN_MODULE_HDRS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/xer_encoder.h
+ASN_MODULE_SRCS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/xer_encoder.c
+ASN_MODULE_HDRS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/per_support.h
+ASN_MODULE_SRCS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/per_support.c
+ASN_MODULE_HDRS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/per_decoder.h
+ASN_MODULE_SRCS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/per_decoder.c
+ASN_MODULE_HDRS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/per_encoder.h
+ASN_MODULE_SRCS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/per_encoder.c
+ASN_MODULE_HDRS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/per_opentype.h
+ASN_MODULE_SRCS+=/home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/per_opentype.c
+
+ASN_MODULE_CFLAGS=-DASN_DISABLE_OER_SUPPORT 
+
+lib_LTLIBRARIES+=libasncodec.la
+libasncodec_la_SOURCES=$(ASN_MODULE_SRCS) $(ASN_MODULE_HDRS)
+libasncodec_la_CPPFLAGS=-I$(top_srcdir)//home/rcdu/openairinterface5g/cmake_targets/ran_build/build/openair2/M2AP/MESSAGES/
+libasncodec_la_CFLAGS=$(ASN_MODULE_CFLAGS)
+libasncodec_la_LDFLAGS=-lm

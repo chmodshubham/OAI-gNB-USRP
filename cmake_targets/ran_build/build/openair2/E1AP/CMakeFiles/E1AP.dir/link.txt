@@ -1,0 +1,2 @@
+/usr/bin/ar qc libE1AP.a  CMakeFiles/E1AP.dir/e1ap.c.o
+/usr/bin/ranlib libE1AP.a

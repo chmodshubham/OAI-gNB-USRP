@@ -1,0 +1,5 @@
+Built target generate_T
+Scanning dependencies of target oai_usrpdevif
+Building CXX object CMakeFiles/oai_usrpdevif.dir/radio/USRP/USERSPACE/LIB/usrp_lib.cpp.o
+Linking CXX shared module liboai_usrpdevif.so
+Built target oai_usrpdevif

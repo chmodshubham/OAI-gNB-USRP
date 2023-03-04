@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../../../common/utils/backtrace.h
+signal.h
+-
+
+/home/rcdu/openairinterface5g/common/utils/backtrace.c
+pthread.h
+-
+stdio.h
+-
+stdlib.h
+-
+unistd.h
+-
+string.h
+-
+signal.h
+-
+execinfo.h
+-
+common/utils/backtrace.h
+-
+

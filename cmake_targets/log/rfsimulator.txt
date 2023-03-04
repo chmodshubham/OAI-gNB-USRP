@@ -1,0 +1,10 @@
+[  0%] Built target generate_T
+[ 38%] Built target asn1_nr_rrc
+[100%] Built target asn1_lte_rrc
+[100%] Built target SIMU
+Scanning dependencies of target rfsimulator
+[100%] Building C object CMakeFiles/rfsimulator.dir/radio/rfsimulator/simulator.c.o
+[100%] Building C object CMakeFiles/rfsimulator.dir/openair1/PHY/TOOLS/signal_energy.c.o
+[100%] Building C object CMakeFiles/rfsimulator.dir/radio/rfsimulator/apply_channelmod.c.o
+[100%] Linking C shared module librfsimulator.so
+[100%] Built target rfsimulator

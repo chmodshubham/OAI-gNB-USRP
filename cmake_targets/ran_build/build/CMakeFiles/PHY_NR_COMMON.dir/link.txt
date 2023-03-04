@@ -1,0 +1,2 @@
+/usr/bin/ar qc libPHY_NR_COMMON.a  CMakeFiles/PHY_NR_COMMON.dir/openair1/PHY/NR_TRANSPORT/nr_prach_common.c.o CMakeFiles/PHY_NR_COMMON.dir/openair1/PHY/NR_TRANSPORT/nr_csi_rs.c.o CMakeFiles/PHY_NR_COMMON.dir/openair1/PHY/NR_TRANSPORT/nr_scrambling.c.o CMakeFiles/PHY_NR_COMMON.dir/openair1/PHY/NR_REFSIG/scrambling_luts.c.o CMakeFiles/PHY_NR_COMMON.dir/openair1/PHY/NR_UE_TRANSPORT/srs_modulation_nr.c.o
+/usr/bin/ranlib libPHY_NR_COMMON.a

@@ -1,0 +1,10 @@
+libL2_LTE_NR.a
+libL2_NR.a
+libNR_L2_UE.a
+libf1ap.a
+nr-softmodem
+nr-uesoftmodem
+libasn1_f1ap.a
+libasn1_lte_rrc.a
+libasn1_nr_rrc.a
+libasn1_x2ap.a

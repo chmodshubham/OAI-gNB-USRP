@@ -1,0 +1,2 @@
+/usr/bin/ar qc libminimal_lib.a  CMakeFiles/minimal_lib.dir/common/utils/backtrace.c.o CMakeFiles/minimal_lib.dir/common/utils/LOG/log.c.o CMakeFiles/minimal_lib.dir/common/utils/minimal_stub.c.o CMakeFiles/minimal_lib.dir/common/utils/T/T.c.o CMakeFiles/minimal_lib.dir/common/utils/T/local_tracer.c.o
+/usr/bin/ranlib libminimal_lib.a
