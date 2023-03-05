@@ -25,8 +25,8 @@ cd OAI-gNB/cmake_targets/ran_build/build/
 # remove this file, if exsists
 rm CMakeCache.txt
 
-cmake ..
 cd ../..
+cmake ..
 
 # to build the gnb for USRP
 ./build_oai -I -w USRP --gNB
